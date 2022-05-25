@@ -20,3 +20,6 @@ Route::get('/', function () {
 // rotta della viws con la lista di tutti i movies
 //grazie al controlle creato col terminale sposto la logica e le funzioni da route a 'app/https/controller/nome controller dato'
 Route::get('/movies', 'MovieController@index')->name('movies') ;
+
+// creo una route per la singola show 
+Route::get('/movies/{id}', 'MovieController@show')->name('movie') ;

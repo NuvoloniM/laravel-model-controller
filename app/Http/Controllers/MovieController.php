@@ -21,4 +21,13 @@ class MovieController extends Controller
         //poichè posso nominarr allo stesso modo chiave e valore uso scorciatoia compact('nome chiave/valore')
         return view('movies', compact('movies'));
     }
+
+    // creo la funzione che mi ritorna la singola views (show) dandomi solo i dati del database che mi servono
+    public function show($id){
+
+        // creo variabile col singolo movie dipendente dall'id che gli passo
+        $movie = Movie::findOrFail($id);
+        // ritorno la views della singola pg del book
+        return view('movie', compact('movie'));
+    }
 }
