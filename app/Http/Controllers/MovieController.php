@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+// impemendo il database creato in model
+use App\Models\Movie;
+
 //controller creato da me per inserire tutta la logica al posto delle view
 //grazie al models ho collegato laravell al mio server privato
 class MovieController extends Controller

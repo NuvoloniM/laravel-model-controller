@@ -1,9 +1,9 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-// collego il mio progetto al database si phpadmin 
+// collego progetto a phpmyadmin
 class Movie extends Model
 {
     //

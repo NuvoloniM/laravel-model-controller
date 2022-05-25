@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 // rotta della home
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
 
 // rotta della viws con la lista di tutti i movies
 //grazie al controlle creato col terminale sposto la logica e le funzioni da route a 'app/https/controller/nome controller dato'
